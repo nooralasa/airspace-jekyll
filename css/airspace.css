@@ -61,6 +61,10 @@ a:active {
   font-style: italic;
   color: #666;
 }
+
+.section-grey {
+  background: #f2f2f2;
+}
 /*--
 	Header Start
 --*/
@@ -266,6 +270,12 @@ font header .navbar-default .navbar-nav li a:hover {
   color: #fff;
   padding: 10px 20px;
 }
+
+#intro .btn-view-works {
+  background: #85ad77;
+  color: #fff;
+  padding: 10px 20px;
+}
 /*--
 	content Start
 --*/
@@ -468,7 +478,7 @@ font header .navbar-default .navbar-nav li a:hover {
 }
 #portfolio-work .block .portfolio-contant ul li {
   float: left;
-  width: 32.22%;
+  width: 100%;
   overflow: hidden;
   margin: 6px;
   position: relative;
