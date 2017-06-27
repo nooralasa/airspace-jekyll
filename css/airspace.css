@@ -37,6 +37,11 @@ p {
   font-size: 15px;
   line-height: 28px;
 }
+#list ul {
+  padding: 0;
+  margin: 0;
+}
+
 ul {
   padding: 0;
   margin: 0;
@@ -64,6 +69,12 @@ a:active {
 
 .section-grey {
   background: #f2f2f2;
+  padding: 0px;
+}
+
+.section-other-grey {
+  background: #fefefe;
+  padding: 0px;
 }
 /*--
 	Header Start
@@ -272,7 +283,7 @@ font header .navbar-default .navbar-nav li a:hover {
 }
 
 #intro .btn-view-works {
-  background: #85ad77;
+  background: #655e7a;
   color: #fff;
   padding: 10px 20px;
 }
