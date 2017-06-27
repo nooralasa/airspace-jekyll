@@ -272,6 +272,18 @@ Main Components
   max-width: 800px;
   margin: 0 auto;
 }
+
+.cd-horizontal-timeline .events-content em {
+  display: block;
+  font-style: italic;
+  margin: 10px auto;
+}
+
+.cd-horizontal-timeline .events-content a {
+  display: block;
+  margin: 10px auto;
+}
+
 /*.cd-horizontal-timeline .events-content h2 {
   text-transform: uppercase;
   font-size: 25px;
