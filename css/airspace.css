@@ -554,6 +554,10 @@ font header .navbar-default .navbar-nav li a:hover {
 #portfolio-work .block .mix {
   display: none;
 }
+
+.notselected {
+  display: none;
+}
 /*--
 	wrapper-work Start
 --*/
