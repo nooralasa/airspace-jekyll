@@ -16,9 +16,9 @@ keep_files:
 # Site settings
 title: Superwisor
 subtitle: "A game to enhance doctoral guidance"
-url: "http://nooralasa.github.io" # the base hostname & protocol for your site
+url: "http://superwisor.github.io" # the base hostname & protocol for your site
 # baseurl: "/the/subpath/of/your/site" # Set this value to "" if you want your site to be root
-baseurl: "/superwisor"
+baseurl: "/"
 cover: "/assets/cover.png"
 logo: "/assets/logo.png"
 
