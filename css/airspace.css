@@ -768,6 +768,7 @@ font header .navbar-default .navbar-nav li a:hover {
 #contact-box {
   padding-top: 35px;
   padding-bottom: 58px;
+  padding-left: 15px;
 }
 #contact-box .block img {
   width: 100%;
