@@ -49,6 +49,18 @@ $(document).ready(function(){
         time: 1000
     });
 
+	// $(window).scroll(function(){
+ //    var fromTopPx = 0; // distance to trigger
+ //    var scrolledFromtop = $(window).scrollTop();
+ //    if(scrolledFromtop > fromTopPx){
+ //        $('#slider').addClass('slider-hover');
+ //        $('#slider').removeClass('slider-normal');
+ //    }else{
+ //    		$('#slider').addClass('slider-normal');
+ //        $('#slider').removeClass('slider-hover');
+ //    }
+	// });
+
 
 	// Timeline
 	var timelines = $('.cd-horizontal-timeline'),

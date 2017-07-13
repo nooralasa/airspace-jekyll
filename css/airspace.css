@@ -76,6 +76,12 @@ a:active {
   background: #fefefe;
   padding: 0px;
 }
+
+.right {
+    position: absolute;
+    right: 0px;
+    padding: 10px;
+}
 /*--
 	Header Start
 --*/
@@ -134,8 +140,17 @@ header .navbar-default .navbar-nav li a:hover {
 /*--
 	Slider Start
 --*/
-#slider {
+.slider-normal {
   background: url("../img/slider-bg7.jpg") no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: 10% 0%;
+  padding: 200px 0 280px 0;
+  position: relative;
+}
+
+.slider-hover {
+  background: url("../img/slider-bg8.gif") no-repeat;
   background-size: cover;
   background-attachment: fixed;
   background-position: 10% 0%;
@@ -165,12 +180,17 @@ header .navbar-default .navbar-nav li a:hover {
   letter-spacing: 10px;
   padding-bottom: 45px;
 }
-#slider .block p {
+#slider .para {
   font-size: 23px;
   line-height: 40px;
   font-family: 'Roboto', sans-serif;
   font-weight: 300;
   letter-spacing: 3px;
+}
+
+.img-resize {
+  max-width: 100%;
+  height: auto;
 }
 /*--
 	wrapper Start
