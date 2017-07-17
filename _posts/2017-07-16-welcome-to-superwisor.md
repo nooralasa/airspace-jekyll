@@ -11,7 +11,7 @@ Supervisor seeks to improve supervisor-supervisee relationship, by testing, rati
 
 This is an example of including an image
 
-![Image of Yaktocat](https://octodex.github.com/images/yaktocat.png)
+![Uploaded Image]({{ site.baseurl }}/img/blog/2017_EFMD-Doctoral_Programmes_Conference-banner-600x300.png)
 
 This is an example of including a video
 
