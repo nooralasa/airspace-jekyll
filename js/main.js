@@ -7,7 +7,6 @@ $(document).ready(function(){
     }
 	});
 
-
 	$("#testimonial-slider").owlCarousel({
 	    paginationSpeed : 500,      
 	    singleItem:true,
