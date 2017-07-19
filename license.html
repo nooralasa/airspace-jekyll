@@ -13,15 +13,180 @@ permalink: /license/
     <div class="row">
       <div class="col-md-12">
         <div class="block">
-          <h1>Drop Us A Note</h1>
-          <p>Want to play the game? Have questions or feedback for us? Want to give us a quotation about your experience? Ask away or tell us what your thoughts.</p>
+          <h1>Purchase a License</h1>
+          <p>Access the Superwisor games and much more. Setup supervisor training sessions with GEM Doctoral School's expertise.</p>
         </div>
       </div>
     </div>
   </div>
 </section>
+
+<section id="intro">
+  <div class='wrapper'>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-4 col-sm-12">
+          <button class='package open-modal' id="ind" data-toggle="modal" data-target="#myModalNorm">
+            <div class='name'>Individual License</div>
+            <div class='price'>€150 | $180</div>
+            <hr>
+            <ul class="pricing-ul">
+              <li class="pricing-item">
+                <strong>1</strong>
+                license
+              </li>
+              <li class="pricing-item">
+                <strong>3</strong>
+                games
+              </li>
+              <li class="pricing-item">
+                <strong>18</strong>
+                dimensions
+              </li>
+              <li class="pricing-item">
+                <strong>22</strong>
+                resources
+              </li>
+            </ul>
+          </button>
+        </div>
+        <div class="col-md-4 col-sm-12">
+          <button class='package open-modal' id="ins" data-toggle="modal" data-target="#myModalNorm">
+            <div class='name'>Institutional Pack</div>
+            <div class='price'>€1000 | $1150</div>
+            <hr>
+            <ul class="pricing-ul">
+              <li class="pricing-item">
+                <strong>5</strong>
+                licenses
+              </li>
+              <li class="pricing-item">
+                <strong>3</strong>
+                games
+              </li>
+              <li class="pricing-item">
+                <strong>18</strong>
+                dimensions
+              </li>
+              <li class="pricing-item">
+                <strong>22</strong>
+                resources
+              </li>
+            </ul>
+          </button>
+        </div>
+        <div class="col-md-4 col-sm-12">
+          <button class='package open-modal' id="train" data-toggle="modal" data-target="#myModalNorm">
+            <div class='name'>Training Pack</div>
+            <div class='price'>€2000 | $2300</div>
+            <hr>
+            <ul class="pricing-ul">
+              <li class="pricing-item">
+                <strong>5</strong>
+                licenses
+              </li>
+              <li class="pricing-item">
+                <strong>3</strong>
+                games
+              </li>
+              <li class="pricing-item">
+                <strong>18</strong>
+                dimensions
+              </li>
+              <li class="pricing-item">
+                <strong>22</strong>
+                resources
+              </li>
+              <li class="pricing-item">
+                <strong>Training</strong>
+                with GEM personal
+              </li>
+            </ul>
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="intro" style="padding-top: 50px; padding-bottom: 50px;" class="section-grey">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12 col-sm-12">
+        <div class="block">
+          <ul style="list-style-type: disc;">
+            <li style="margin-left: 30px;"><p><strong>Individual license:</strong> <em>150€/ US $180.</em> If you are an individual supervisor, educator, or researcher and want to train yourself, or just challenge your assumptions regarding doctoral supervision, the full-access license will allow you to play the three levels of Superwisor and access all the resources to learn and improve your practices as a doctoral supervisor.</p><br/><a class="open-modal" id="ind" data-toggle="modal" data-target="#myModalNorm">Request Individual License</a></li>
+            <br/><hr/>
+            <li style="margin-left: 30px;"><p><strong>Institutional pack:</strong> <em>1000€ / US $1,150.</em> The institutional pack for business schools and universities provides five licenses. We recommend playing the game with a group of five to ten thesis advisors and providing space for debates. At the group level, Superwisor becomes a means to share practices and ideas and can trigger very interesting discussions.</p><br/><a class="open-modal" id="ins" data-toggle="modal" data-target="#myModalNorm">Request Institutional Pack</a></li>
+            <br/><hr/>
+            <li style="margin-left: 30px;"><p><strong>Training pack:</strong> <em>2000€/ US $2,300.</em> In addition to the institutional pack, you may want to have the support of one member of the GEM Superwisor team to animate a day of training with a team of faculty members. We will be happy to share practices and open debates about pastoral care, academic guidance, team supervision, and publications and co-authorship.</p><br/><a class="open-modal" id="train" data-toggle="modal" data-target="#myModalNorm">Request Training Pack</a></li>
+            <br/><br/>
+          </ul>
+        </div>
+      </div><!-- .col-md-7 close -->
+    </div>
+  </div>
+</section>
+
+<!-- Modal -->
+<div class="modal fade" id="myModalNorm" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <!-- Modal Header -->
+            <div class="modal-header">
+                <button type="button" class="close close-modal" 
+                   data-dismiss="modal">
+                       <span aria-hidden="true">&times;</span>
+                       <span class="sr-only">Close</span>
+                </button>
+                <h4 class="modal-title" id="myModalLabel">
+                    Request Superwisor License
+                </h4>
+            </div>
+            
+            <!-- Modal Body -->
+            <div id="contact-form" style="padding-top: 35px;" class="modal-body">
+                
+                <form action="https://formspree.io/superwisor@grenoble-em.com" method="POST">
+                  <div class="block">
+                    <div class="form-group">
+                      <select name="license" class="form-control lis-select">
+                        <option value="Individual License" class="ind">Individual License - €150/$180</option>
+                        <option value="Institutional Pack" class="ins">Institutional Pack - €1000/$1150</option>
+                        <option value="Training Pack" class="train">Training Pack - €2000/$2300</option>
+                      </select>
+                    </div>
+                    <br/>
+                    <hr>
+                    <br/>
+                    <div class="form-group">
+                      <input type="hidden" name="_subject" value="Website contact" />
+                      <input type="text" name="_gotcha" style="display:none" />
+                      <input type="text" name="name" class="form-control" placeholder="Your Name">
+                    </div>
+                    <div class="form-group">
+                      <input type="text" name="title" class="form-control" placeholder="Your Title">
+                    </div>
+                    <div class="form-group">
+                      <input type="text" name="org" class="form-control" placeholder="Your Organization">
+                    </div>
+                    <div class="form-group">
+                      <input type="email" name="_replyto" class="form-control" placeholder="Email Address">
+                    </div>
+                    <div class="form-group-2">
+                      <textarea class="form-control" name="message" rows="3" placeholder="Your Message"></textarea>
+                    </div>
+                    <button class="btn btn-default contact-button close-modal" type="submit">Request License</button>
+                  </div>
+                </form>
+                
+            </div>
+        </div>
+    </div>
+</div>
+
 <!-- contact form start -->
-<section id="contact-form">
+<!-- <section id="contact-form">
   <div class="container">
     <div class="row">
       <div class="col-md-12 col-sm-12">
@@ -79,7 +244,9 @@ permalink: /license/
       </div>
     </div>
   </div>
-</section>
+</section> -->
+
+
 <!-- Call to action Start -->
 <section id="call-to-action">
   <div class="container">

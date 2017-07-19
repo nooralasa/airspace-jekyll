@@ -13,8 +13,17 @@ $(document).ready(function(){
 	    autoPlay: 3000,
 	});
 
+	$('.package').hover(
+    function(){ $(this).toggleClass('brilliant') }
+	)
 
+	$('.open-modal').click( function(){ 
+  	$("."+this.id).attr("selected", "selected"); 
+   })
 
+	$('.close-modal').click( function(){ 
+  	$("option").removeAttr("selected"); 
+   })
 
 	$("#clients-logo").owlCarousel({
 		autoPlay: 3000,
