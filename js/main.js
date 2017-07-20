@@ -1,11 +1,7 @@
 $(document).ready(function(){
 
 
-	$("#portfolio-contant-active").mixItUp({
-    load: {
-        filter: '.part1'
-    }
-	});
+	$("#portfolio-contant-active").mixItUp({});
 
 	$("#testimonial-slider").owlCarousel({
 	    paginationSpeed : 500,      
