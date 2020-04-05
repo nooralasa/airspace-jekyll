@@ -1,17 +1,6 @@
-# _Airspace_ for Jekyll
+# Superwisor
 ![screenshot](screenshots/home.png "Description goes here")
 
-This Jekyll theme is a port of ThemeFisher's Airspace template. It is released under ThemeFisher's free license, which requires attribution.
+Superwisor is a serious virtual game to enhance doctoral supervision. Supervisors play the game and go through three different senarios of interacting with their PhD or DBA student. At the end of the game, best practices and resources for improvement are shared with the supervisors.
 
-## Usage
-To start your project, [fork this respository](https://github.com/luminousrubyist/airspace-jekyll/fork), put in your content, and go!
-
-## Examples
-Here are some projects that have used this Jekyll Theme:
-* [BOYUAN Open Source 博辕开源](https://boyuanitsm.github.io)
-* [Campus VC](https://mrchildneo.github.io/mrchildneo/)
-* [Mãos de amar](https://www.maosdeamar.com.br/)
-* [ATK Team](http://www.atksec.com/)
-* [Coding Club](https://ourcodingclub.github.io/)
-* [Dev Empathy Book Club](http://www.devempathybook.club/)
-* [DKAN Open Data Catalog](http://getdkan.com) (modified version of this theme)
+The homepage for Superwisor was built with a [ThemeFisher's Airspace Jekyll themed template](https://github.com/luminousrubyist/airspace-jekyll).

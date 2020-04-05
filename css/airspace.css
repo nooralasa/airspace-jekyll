@@ -13,6 +13,14 @@
 /*--
 	Common Css
 --*/
+* {
+  margin: 0;
+  padding: 0;
+  -moz-box-sizing: border-box; 
+  -webkit-box-sizing: border-box; 
+  box-sizing: border-box;
+}
+
 body {
   font-family: 'Open Sans', sans-serif;
   -webkit-font-smoothing: antialiased;
@@ -42,7 +50,7 @@ p {
   margin: 0;
 }
 
-ul {
+.ul-list {
   padding: 0;
   margin: 0;
   list-style: none;
@@ -76,6 +84,13 @@ a:active {
   background: #fefefe;
   padding: 0px;
 }
+
+.right {
+    position: absolute;
+    right: 0px;
+    padding: 10px;
+}
+
 /*--
 	Header Start
 --*/
@@ -124,8 +139,14 @@ header .navbar-default .navbar-nav li a {
   padding: 10px 26px;
   font-size: 15px;
 }
-font header .navbar-default .navbar-nav li a:hover {
+header .navbar-default .navbar-nav li a:hover {
   color: #000;
+  border-bottom: 2px solid #000;
+}
+
+header .navbar-default .navbar-nav li a.active-link {
+  color: #000;
+  border-bottom: 2px solid #4B0082;
 }
 /*---------------------------------------------
 					Index Start
@@ -133,8 +154,17 @@ font header .navbar-default .navbar-nav li a:hover {
 /*--
 	Slider Start
 --*/
-#slider {
-  background: url("../img/slider-bg7.jpg") no-repeat;
+.slider-normal {
+  background: url("../img/slider-bg7.png") no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: 10% 0%;
+  padding: 200px 0 280px 0;
+  position: relative;
+}
+
+.slider-hover {
+  background: url("../img/slider-bg8.gif") no-repeat;
   background-size: cover;
   background-attachment: fixed;
   background-position: 10% 0%;
@@ -164,12 +194,17 @@ font header .navbar-default .navbar-nav li a:hover {
   letter-spacing: 10px;
   padding-bottom: 45px;
 }
-#slider .block p {
+#slider .para {
   font-size: 23px;
   line-height: 40px;
   font-family: 'Roboto', sans-serif;
   font-weight: 300;
   letter-spacing: 3px;
+}
+
+.img-resize {
+  max-width: 100%;
+  height: auto;
 }
 /*--
 	wrapper Start
@@ -401,7 +436,7 @@ font header .navbar-default .navbar-nav li a:hover {
 	Slider-work Start
 --*/
 #global-header {
-  background: url("../img/slider-bg.jpg") no-repeat;
+  background: url("../img/slider-bg7.png") no-repeat;
   background-size: cover;
   padding-top: 150px;
   padding-bottom: 107px;
@@ -435,6 +470,47 @@ font header .navbar-default .navbar-nav li a:hover {
   text-transform: capitalize;
 }
 #global-header .block p {
+  font-size: 16px;
+  font-weight: 300;
+  letter-spacing: 1px;
+  word-spacing: 3px;
+}
+
+#contact-header {
+  background: url("../img/slider-bg.jpg") no-repeat;
+  background-size: cover;
+  padding-top: 150px;
+  padding-bottom: 107px;
+  position: relative;
+  background-attachment: fixed;
+}
+#contact-header:before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to left, #928dab, #1f1c2c 70%);
+  opacity: 0.8;
+}
+#contact-header .block {
+  color: #E3E3E4;
+  margin: 0 auto;
+  padding-left: 90px;
+  text-align: center;
+}
+#contact-header .block h1 {
+  font-weight: 100;
+  font-size: 45px;
+  letter-spacing: 6px;
+  padding-bottom: 15px;
+  margin-top: 0;
+  text-transform: capitalize;
+}
+#contact-header .block p {
   font-size: 16px;
   font-weight: 300;
   letter-spacing: 1px;
@@ -700,29 +776,30 @@ font header .navbar-default .navbar-nav li a:hover {
   padding-top: 70px;
   padding-bottom: 35px;
 }
-#contact-form .block form .form-group {
+#contact-form form .block .form-group {
   padding-bottom: 15px;
   margin: 0px;
 }
-#contact-form .block form .form-group .form-control {
+#contact-form form .block .form-group .form-control {
   background: #F6F8FA;
   height: 60px;
   border: 1px solid #EEF2F6;
   box-shadow: none;
   width: 100%;
 }
-#contact-form .block form .form-group-2 {
+#contact-form form .block .form-group-2 {
   padding-bottom: 15px;
   margin: 0px;
 }
-#contact-form .block form .form-group-2 textarea {
+#contact-form form .block .form-group-2 textarea {
   background: #F6F8FA;
   height: 135px;
   border: 1px solid #EEF2F6;
   box-shadow: none;
   width: 100%;
 }
-#contact-form .block button {
+
+.contact-button {
   width: 100%;
   height: 60px;
   background: #47424C;
@@ -768,6 +845,7 @@ font header .navbar-default .navbar-nav li a:hover {
 #contact-box {
   padding-top: 35px;
   padding-bottom: 58px;
+  padding-left: 15px;
 }
 #contact-box .block img {
   width: 100%;
@@ -796,6 +874,7 @@ font header .navbar-default .navbar-nav li a:hover {
   display: inline-block;
   padding: 40px 0px;
 }
+
 /*---------------------------------------------
 					Contact Close
 -----------------------------------------------*/
@@ -851,4 +930,113 @@ footer .footer-manu ul li a {
 }
 footer .footer-manu ul li a:hover {
   color: #000;
+}
+
+/*
+Pricing Module CSS
+*/
+
+.wrapper {
+    margin: 50px;
+    top: 50%;
+    left: 50%;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    color: #9f9f9f;
+    font-size: 15px;
+}
+.package {
+    box-sizing: border-box;
+    width: 301px;
+    height: 380px;
+    border: 3px solid #e8e8e8;
+    border-radius: 7px;
+    display: inline-block;
+    padding: 24px;
+    text-align: center;
+    float: left;
+    transition: margin-top .5s linear;
+    position: relative;
+    margin: 11px;
+    background-color: white;
+}
+.package:hover {
+    margin-top: -30px;
+    transition: margin-top .3s linear;
+}
+.name {
+    color: #565656;
+    font-weight: 300;
+    font-size: 3rem;
+    margin-top: -5px;
+}
+.price {
+    margin-top: 7px;
+    font-weight: bold;
+    color: #8A2BE2;
+}
+.price::after {
+    font-weight: normal;
+}
+hr {
+    background-color: #dedede;
+    border: none;
+    height: 1px;
+}
+/*.trial {
+    font-size: .9rem;
+    font-weight: 600;
+    padding: 2px 21px 2px 21px;
+    color: #33c4b6;
+    border: 1px solid #e4e4e4;
+    display: inline-block;
+    border-radius: 15px;
+    background-color: white;
+    position: relative;
+    bottom: -20px;
+}*/
+.pricing-ul {
+    list-style: none;
+    padding: 0;
+    text-align: left;
+    margin-top: 29px;
+}
+.pricing-item {
+    margin-bottom: 15px;
+}
+.checkIcon {
+    font-family: "FontAwesome";
+    content: "\f00c";
+}
+.pricing-item::before {
+    font-family: "FontAwesome";
+    content: "\f00c";
+    font-size: 1.3rem;
+    color: #800080;
+    margin-right: 3px;
+}
+.brilliant {
+    border-color: #800080;
+}
+/* Triangle */
+.brilliant::before {
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 64px 64px 0 0;
+    border-color: #800080 transparent transparent transparent;
+    position: absolute;
+    left: 0;
+    top: 0;
+    content: "";
+}
+.brilliant::after {
+    font-family: "FontAwesome";
+    content: "\f00c";
+    color: white;
+    position: absolute;
+    left: 9px;
+    top: 6px;
+    text-shadow: 0 0 2px #37c5b6;
+    font-size: 2rem;
 }

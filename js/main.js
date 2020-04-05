@@ -1,12 +1,7 @@
 $(document).ready(function(){
 
 
-	$("#portfolio-contant-active").mixItUp({
-    load: {
-        filter: '.part1'
-    }
-	});
-
+	$("#portfolio-contant-active").mixItUp({});
 
 	$("#testimonial-slider").owlCarousel({
 	    paginationSpeed : 500,      
@@ -14,8 +9,17 @@ $(document).ready(function(){
 	    autoPlay: 3000,
 	});
 
+	$('.package').hover(
+    function(){ $(this).toggleClass('brilliant') }
+	)
 
+	$('.open-modal').click( function(){ 
+  	$("."+this.id).attr("selected", "selected"); 
+   })
 
+	$('.close-modal').click( function(){ 
+  	$("option").removeAttr("selected"); 
+   })
 
 	$("#clients-logo").owlCarousel({
 		autoPlay: 3000,
@@ -48,6 +52,18 @@ $(document).ready(function(){
         delay: 10,
         time: 1000
     });
+
+	// $(window).scroll(function(){
+ //    var fromTopPx = 0; // distance to trigger
+ //    var scrolledFromtop = $(window).scrollTop();
+ //    if(scrolledFromtop > fromTopPx){
+ //        $('#slider').addClass('slider-hover');
+ //        $('#slider').removeClass('slider-normal');
+ //    }else{
+ //    		$('#slider').addClass('slider-normal');
+ //        $('#slider').removeClass('slider-hover');
+ //    }
+	// });
 
 
 	// Timeline
